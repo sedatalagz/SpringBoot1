@@ -27,7 +27,6 @@
     </properties>
 
     <dependencies>
-
         <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -40,7 +39,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
-
 
         <!--swagger open-api-3.0.3-->
         <dependency>
@@ -192,5 +190,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>
