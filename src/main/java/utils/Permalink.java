@@ -1,4 +1,4 @@
-package com.example.kodluyoruzspringboot.utils;
+package utils;
 
 public class Permalink {
     //https://github.com/sedatalagz/SpringBoot1
