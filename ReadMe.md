@@ -1,4 +1,4 @@
-# Kodlama
+# Kodlar
 - Java 18
 - Spring Boot
 - Spring MVC
