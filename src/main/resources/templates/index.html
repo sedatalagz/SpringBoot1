@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Templates</title>
     <meta charset="UTF-8">
@@ -8,19 +8,9 @@
     <link rel="stylesheet" th:href="@{/css/style.css}">
 </head>
 <body class="container">
-<!--start codes-->
-<p th:text="${key_model1}"></p>
-<hr>
-<table class="table">
-    <tr class="tr" th:each="temp:${product_list}">
-        <td class="td1" th:text="${temp.getProductId()} "></td>
-        <td th:text="${temp.productName}"></td>
-        <td th:text="${temp.productPrice}"></td>
-        <td th:if="${temp.productPrice>3000}" th:text="Büyüktür"></td>
-        <td th:if="${temp.productPrice<3000}" th:text="Küçüktür"></td>
-    </tr>
-</table>
 
+<!--start codes-->
+<h1 class="index">index Sayfamız</h1>
 <!--ends codes-->
 <script src="https://cdn.jcdelivr.net/npm/@poperjs/core@2.9.2/dist/umd/poper.min.js"></script>
 <script src="https://cdn.jcdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
