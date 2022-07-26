@@ -1343,3 +1343,188 @@ Caused by: java.lang.ClassNotFoundException: com.example.kodluyoruzspringboot.dt
 2022-07-26 11:48:48.837 ERROR 15072 --- [http-nio-8080-exec-9] c.e.k.controller.FormController          : Hata var...
 2022-07-26 11:48:49.618 ERROR 15072 --- [http-nio-8080-exec-1] c.e.k.controller.FormController          : Hata var...
 2022-07-26 11:48:55.626 ERROR 15072 --- [http-nio-8080-exec-3] c.e.k.controller.FormController          : Hata var...
+2022-07-26 14:16:13.825  INFO 15072 --- [SpringApplicationShutdownHook] c.e.kodluyoruzspringboot.dto.BeanDto     : Bean bittikten sonra ben varim
+2022-07-26 14:16:13.825  INFO 15072 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-26 14:16:13.841  INFO 15072 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-26 14:16:13.841  INFO 15072 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-26 14:52:36.108  INFO 15060 --- [restartedMain] c.e.k.KodluyoruzApplication              : Starting KodluyoruzApplication using Java 18.0.1.1 on DESKTOP-JF2M0RB with PID 15060 (C:\spring Boot Demos\SpringBoot101\kodluyoruz\target\classes started by Sedat in C:\spring Boot Demos\SpringBoot101\kodluyoruz)
+2022-07-26 14:52:36.110  INFO 15060 --- [restartedMain] c.e.k.KodluyoruzApplication              : No active profile set, falling back to 1 default profile: "default"
+2022-07-26 14:52:36.195  INFO 15060 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-26 14:52:36.195  INFO 15060 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-26 14:52:37.293  WARN 15060 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'passwordEncoderBean' defined in class path resource [com/example/kodluyoruzspringboot/bean/PasswordEncoderBean.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=passwordEncoderBean; factoryMethodName=passwordEncoderBean; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/example/kodluyoruzspringboot/bean/PasswordEncoderBean.class]] for bean 'passwordEncoderBean': There is already [Generic bean: class [com.example.kodluyoruzspringboot.bean.PasswordEncoderBean]; scope=singleton; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\spring Boot Demos\SpringBoot101\kodluyoruz\target\classes\com\example\kodluyoruzspringboot\bean\PasswordEncoderBean.class]] bound.
+2022-07-26 14:52:37.313  INFO 15060 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-07-26 14:52:37.343 ERROR 15060 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'passwordEncoderBean', defined in class path resource [com/example/kodluyoruzspringboot/bean/PasswordEncoderBean.class], could not be registered. A bean with that name has already been defined in file [C:\spring Boot Demos\SpringBoot101\kodluyoruz\target\classes\com\example\kodluyoruzspringboot\bean\PasswordEncoderBean.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2022-07-26 14:52:55.218  INFO 16892 --- [restartedMain] c.e.k.KodluyoruzApplication              : Starting KodluyoruzApplication using Java 18.0.1.1 on DESKTOP-JF2M0RB with PID 16892 (C:\spring Boot Demos\SpringBoot101\kodluyoruz\target\classes started by Sedat in C:\spring Boot Demos\SpringBoot101\kodluyoruz)
+2022-07-26 14:52:55.220  INFO 16892 --- [restartedMain] c.e.k.KodluyoruzApplication              : No active profile set, falling back to 1 default profile: "default"
+2022-07-26 14:52:55.299  INFO 16892 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-26 14:52:55.299  INFO 16892 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-26 14:52:56.439  WARN 16892 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'passwordEncoderBean' defined in class path resource [com/example/kodluyoruzspringboot/bean/PasswordEncoderBean.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=passwordEncoderBean; factoryMethodName=passwordEncoderBean; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/example/kodluyoruzspringboot/bean/PasswordEncoderBean.class]] for bean 'passwordEncoderBean': There is already [Generic bean: class [com.example.kodluyoruzspringboot.bean.PasswordEncoderBean]; scope=singleton; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\spring Boot Demos\SpringBoot101\kodluyoruz\target\classes\com\example\kodluyoruzspringboot\bean\PasswordEncoderBean.class]] bound.
+2022-07-26 14:52:56.459  INFO 16892 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-07-26 14:52:56.497 ERROR 16892 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'passwordEncoderBean', defined in class path resource [com/example/kodluyoruzspringboot/bean/PasswordEncoderBean.class], could not be registered. A bean with that name has already been defined in file [C:\spring Boot Demos\SpringBoot101\kodluyoruz\target\classes\com\example\kodluyoruzspringboot\bean\PasswordEncoderBean.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2022-07-26 14:53:09.589  INFO 3588 --- [restartedMain] c.e.k.KodluyoruzApplication              : Starting KodluyoruzApplication using Java 18.0.1.1 on DESKTOP-JF2M0RB with PID 3588 (C:\spring Boot Demos\SpringBoot101\kodluyoruz\target\classes started by Sedat in C:\spring Boot Demos\SpringBoot101\kodluyoruz)
+2022-07-26 14:53:09.592  INFO 3588 --- [restartedMain] c.e.k.KodluyoruzApplication              : No active profile set, falling back to 1 default profile: "default"
+2022-07-26 14:53:09.670  INFO 3588 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-26 14:53:09.671  INFO 3588 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-26 14:53:11.052  WARN 3588 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'passwordEncoderBean' defined in class path resource [com/example/kodluyoruzspringboot/bean/PasswordEncoderBean.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=passwordEncoderBean; factoryMethodName=passwordEncoderBean; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/example/kodluyoruzspringboot/bean/PasswordEncoderBean.class]] for bean 'passwordEncoderBean': There is already [Generic bean: class [com.example.kodluyoruzspringboot.bean.PasswordEncoderBean]; scope=singleton; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\spring Boot Demos\SpringBoot101\kodluyoruz\target\classes\com\example\kodluyoruzspringboot\bean\PasswordEncoderBean.class]] bound.
+2022-07-26 14:53:11.093  INFO 3588 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-07-26 14:53:11.157 ERROR 3588 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'passwordEncoderBean', defined in class path resource [com/example/kodluyoruzspringboot/bean/PasswordEncoderBean.class], could not be registered. A bean with that name has already been defined in file [C:\spring Boot Demos\SpringBoot101\kodluyoruz\target\classes\com\example\kodluyoruzspringboot\bean\PasswordEncoderBean.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2022-07-26 14:53:46.895  INFO 17316 --- [restartedMain] c.e.k.KodluyoruzApplication              : Starting KodluyoruzApplication using Java 18.0.1.1 on DESKTOP-JF2M0RB with PID 17316 (C:\spring Boot Demos\SpringBoot101\kodluyoruz\target\classes started by Sedat in C:\spring Boot Demos\SpringBoot101\kodluyoruz)
+2022-07-26 14:53:46.898  INFO 17316 --- [restartedMain] c.e.k.KodluyoruzApplication              : No active profile set, falling back to 1 default profile: "default"
+2022-07-26 14:53:46.991  INFO 17316 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-26 14:53:46.992  INFO 17316 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-26 14:53:48.089  WARN 17316 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'passwordEncoderBean' defined in class path resource [com/example/kodluyoruzspringboot/bean/PasswordEncoderBean.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=passwordEncoderBean; factoryMethodName=passwordEncoderBean; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/example/kodluyoruzspringboot/bean/PasswordEncoderBean.class]] for bean 'passwordEncoderBean': There is already [Generic bean: class [com.example.kodluyoruzspringboot.bean.PasswordEncoderBean]; scope=singleton; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [C:\spring Boot Demos\SpringBoot101\kodluyoruz\target\classes\com\example\kodluyoruzspringboot\bean\PasswordEncoderBean.class]] bound.
+2022-07-26 14:53:48.107  INFO 17316 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-07-26 14:53:48.140 ERROR 17316 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'passwordEncoderBean', defined in class path resource [com/example/kodluyoruzspringboot/bean/PasswordEncoderBean.class], could not be registered. A bean with that name has already been defined in file [C:\spring Boot Demos\SpringBoot101\kodluyoruz\target\classes\com\example\kodluyoruzspringboot\bean\PasswordEncoderBean.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2022-07-26 14:55:36.582  INFO 13848 --- [restartedMain] c.e.k.KodluyoruzApplication              : Starting KodluyoruzApplication using Java 18.0.1.1 on DESKTOP-JF2M0RB with PID 13848 (C:\spring Boot Demos\SpringBoot101\kodluyoruz\target\classes started by Sedat in C:\spring Boot Demos\SpringBoot101\kodluyoruz)
+2022-07-26 14:55:36.585  INFO 13848 --- [restartedMain] c.e.k.KodluyoruzApplication              : No active profile set, falling back to 1 default profile: "default"
+2022-07-26 14:55:36.675  INFO 13848 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-07-26 14:55:36.675  INFO 13848 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-07-26 14:55:38.378  INFO 13848 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-07-26 14:55:38.379  INFO 13848 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-07-26 14:55:38.391  INFO 13848 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 JDBC repository interfaces.
+2022-07-26 14:55:38.400  INFO 13848 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-07-26 14:55:38.401  INFO 13848 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-26 14:55:38.410  INFO 13848 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2022-07-26 14:55:39.278  INFO 13848 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-26 14:55:39.291  INFO 13848 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-26 14:55:39.292  INFO 13848 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-26 14:55:39.423  INFO 13848 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-26 14:55:39.423  INFO 13848 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2747 ms
+2022-07-26 14:55:39.628  INFO 13848 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-26 14:55:39.833  INFO 13848 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-26 14:55:39.850  INFO 13848 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./memory_persist/denemedb'
+2022-07-26 14:55:40.031  INFO 13848 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-26 14:55:40.106  INFO 13848 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-07-26 14:55:40.338  INFO 13848 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-26 14:55:40.518  INFO 13848 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-07-26 14:55:40.826  INFO 13848 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-26 14:55:40.845  INFO 13848 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-26 14:55:41.140  WARN 13848 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-26 14:55:41.357  INFO 13848 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-07-26 14:55:42.592  INFO 13848 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-26 14:55:42.600  INFO 13848 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-07-26 14:55:42.667  INFO 13848 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-26 14:55:42.688  INFO 13848 --- [restartedMain] c.e.k.KodluyoruzApplication              : Started KodluyoruzApplication in 6.667 seconds (JVM running for 7.932)
+2022-07-26 14:55:42.945  INFO 13848 --- [RMI TCP Connection(1)-192.168.171.149] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-26 14:55:42.946  INFO 13848 --- [RMI TCP Connection(1)-192.168.171.149] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-26 14:55:42.949  INFO 13848 --- [RMI TCP Connection(1)-192.168.171.149] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-07-26 15:00:33.302  INFO 13848 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-26 15:00:33.310  INFO 13848 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-26 15:00:33.331  INFO 13848 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-26 15:00:33.492  INFO 13848 --- [restartedMain] c.e.k.KodluyoruzApplication              : Starting KodluyoruzApplication using Java 18.0.1.1 on DESKTOP-JF2M0RB with PID 13848 (C:\spring Boot Demos\SpringBoot101\kodluyoruz\target\classes started by Sedat in C:\spring Boot Demos\SpringBoot101\kodluyoruz)
+2022-07-26 15:00:33.492  INFO 13848 --- [restartedMain] c.e.k.KodluyoruzApplication              : No active profile set, falling back to 1 default profile: "default"
+2022-07-26 15:00:34.373  INFO 13848 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-07-26 15:00:34.375  INFO 13848 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-07-26 15:00:34.380  INFO 13848 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 0 JDBC repository interfaces.
+2022-07-26 15:00:34.388  INFO 13848 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-07-26 15:00:34.389  INFO 13848 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-26 15:00:34.391  INFO 13848 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2022-07-26 15:00:34.609  INFO 13848 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-26 15:00:34.611  INFO 13848 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-26 15:00:34.611  INFO 13848 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-26 15:00:34.667  INFO 13848 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-26 15:00:34.668  INFO 13848 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1171 ms
+2022-07-26 15:00:34.737  INFO 13848 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2022-07-26 15:00:34.768  INFO 13848 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2022-07-26 15:00:34.769  INFO 13848 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./memory_persist/denemedb'
+2022-07-26 15:00:34.838  INFO 13848 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-26 15:00:34.851  INFO 13848 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-07-26 15:00:34.879  INFO 13848 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-26 15:00:34.880  INFO 13848 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-26 15:00:34.963  WARN 13848 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-26 15:00:35.064  INFO 13848 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-07-26 15:00:35.994  INFO 13848 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-26 15:00:36.002  INFO 13848 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-07-26 15:00:36.046  INFO 13848 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-26 15:00:36.064  INFO 13848 --- [restartedMain] c.e.k.KodluyoruzApplication              : Started KodluyoruzApplication in 2.638 seconds (JVM running for 301.308)
+2022-07-26 15:00:36.069  INFO 13848 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-07-26 15:00:38.485  INFO 13848 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-26 15:00:38.488  INFO 13848 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2022-07-26 15:00:38.497  INFO 13848 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2022-07-26 15:00:38.624  INFO 13848 --- [restartedMain] c.e.k.KodluyoruzApplication              : Starting KodluyoruzApplication using Java 18.0.1.1 on DESKTOP-JF2M0RB with PID 13848 (C:\spring Boot Demos\SpringBoot101\kodluyoruz\target\classes started by Sedat in C:\spring Boot Demos\SpringBoot101\kodluyoruz)
+2022-07-26 15:00:38.625  INFO 13848 --- [restartedMain] c.e.k.KodluyoruzApplication              : No active profile set, falling back to 1 default profile: "default"
+2022-07-26 15:00:39.182  INFO 13848 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-07-26 15:00:39.182  INFO 13848 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-07-26 15:00:39.184  INFO 13848 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JDBC repository interfaces.
+2022-07-26 15:00:39.191  INFO 13848 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-07-26 15:00:39.191  INFO 13848 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-26 15:00:39.193  INFO 13848 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2022-07-26 15:00:39.387  INFO 13848 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-07-26 15:00:39.388  INFO 13848 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-26 15:00:39.389  INFO 13848 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-26 15:00:39.428  INFO 13848 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-26 15:00:39.429  INFO 13848 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 801 ms
+2022-07-26 15:00:39.489  INFO 13848 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2022-07-26 15:00:39.511  INFO 13848 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2022-07-26 15:00:39.511  INFO 13848 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./memory_persist/denemedb'
+2022-07-26 15:00:39.555  INFO 13848 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-26 15:00:39.565  INFO 13848 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2022-07-26 15:00:39.583  INFO 13848 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-26 15:00:39.583  INFO 13848 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-26 15:00:39.656  WARN 13848 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-26 15:00:39.737  INFO 13848 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-07-26 15:00:40.473  INFO 13848 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-07-26 15:00:40.479  INFO 13848 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-07-26 15:00:40.509  INFO 13848 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-26 15:00:40.520  INFO 13848 --- [restartedMain] c.e.k.KodluyoruzApplication              : Started KodluyoruzApplication in 1.942 seconds (JVM running for 305.764)
+2022-07-26 15:00:40.523  INFO 13848 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
