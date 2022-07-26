@@ -1,26 +1,89 @@
-﻿*{
+﻿* {
     box-sizing: border-box;
     margin: 0px;
-    padding: 0;
+    padding: 0px;
 }
 
-.thymeleaf2{
+.thymeleaf2 {
     background-color: darkgoldenrod;
-    box-shadow: 1px 1px 5px 1px rgba(0,0,0,.8);
-}
-.thymeleaf1{
-    background-color: darkgoldenrod;
-    box-shadow: 1px 1px 5px 1px rgba(0,0,0,.8);
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, .8);
 }
 
-.tr{
-    color:white;
-    background-color:MediumSeaGreen;
+.thymeleaf1 {
+    background-color: darkgoldenrod;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, .8);
 }
-.tr:hover{
-    color:blue;
-    background-color:MediumSeaGreen;
+
+.tr {
+    color: white;
+    background-color: MediumSeaGreen;
 }
-.table{
-    width:100% ;
+
+.tr:hover {
+    color: blue;
+    background-color: MediumSeaGreen;
 }
+
+.table {
+    width: 100%;
+}
+
+.register{
+    display: flex;
+    float: left;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 300px;
+    font-size: 24px;
+    color: white;
+    background-color: skyblue;
+    margin: auto;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    float: left;
+    margin: 4px;
+    align-items: center;
+    justify-content: center;
+}
+
+.Adi{
+    text-transform: capitalize;
+}
+
+.btn{
+    color: white;
+    border-color: red;
+    background-color: red;
+}
+
+.btn1{
+    margin: 4px;
+    color: white;
+    border-color: blue;
+    background-color: blue;
+}
+
+.form{
+    display: flex;
+    float: left;
+    align-items: center;
+    justify-content: center;
+    margin: 4px;
+}
+
+.container1{
+    display: flex;
+    float: left;
+    width: 300px;
+    height: 300px;
+}
+
+.container{
+    width: 300px;
+    height: 300px;
+}
+

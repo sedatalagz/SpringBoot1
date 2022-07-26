@@ -3,7 +3,7 @@ package com.example.kodluyoruzspringboot;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication (exclude = { /*devred??? b?rakma*/
+@SpringBootApplication (exclude = { /*devre disi birakma*/
         org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration.class,
         org.springframework.boot.actuate.autoconfigure.security.servlet.ManagementWebSecurityAutoConfiguration.class}
 )

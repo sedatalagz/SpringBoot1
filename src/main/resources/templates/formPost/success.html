@@ -1,24 +1,16 @@
 ﻿<!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Templates</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://cdn.jcdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
-
+    <link rel="stylesheet" th:href="@{/css/style.css}">
 </head>
 <body class="container">
 <!--start codes-->
 
-<h1 class="text-center text-primary">Thymeleaf-3 html</h1>
-<p th:text="${key_model1}"></p>
-<form action="">
-    <div class="form-group">
-        <label th:text="#{register}" for="name_surname"></label>
-        <input type="text" class="form-control" placeholder="Adınız Soyadınız" name="name_surname" id="name_surname" autofocus required>
-        <button class="btn btn-primary mt-3">Gönder</button>
-    </div>
-</form>
+<h1 class="text-center">Başarılı bir şekilde kaydedildi</h1>
 
 <!--ends codes-->
 <script src="https://cdn.jcdelivr.net/npm/@poperjs/core@2.9.2/dist/umd/poper.min.js"></script>

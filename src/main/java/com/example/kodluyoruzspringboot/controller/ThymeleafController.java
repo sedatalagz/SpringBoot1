@@ -1,6 +1,7 @@
 package com.example.kodluyoruzspringboot.controller;
 
 import com.example.kodluyoruzspringboot.bean.ProductDto;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -9,7 +10,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Collection;
 
 
 @Controller
@@ -109,11 +109,17 @@ public class ThymeleafController {
                                       @RequestParam(name ="name") String adi
     ) {
         if (id!=null){
-            model.addAttribute("key_model1", " id: " + id + " Adı Soyadı " + adi);
+            model.addAttribute("key_model1", " id: " + id + " Adı Soyadı " + adi);
         }
         else{
             model.addAttribute("key_model1", "id bulunamadı ");
         }
         return "thymeleaf7";
+    }
+
+    // http://localhost:8080/formPost/formvalidation
+    @GetMapping("formPost/formvalidation")
+    public String form(Model model) {
+        return "formPost/formvalidation";
     }
 }
